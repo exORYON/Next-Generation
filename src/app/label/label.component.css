@@ -1,0 +1,11 @@
+.intro__label {
+  display: inline-flex;
+  height: 20px;
+  width: 80px;
+  margin-left: 15px;
+  font-size: 12px;
+  line-height: 12px;
+  background: var(--purple);
+  border-radius: 4px;
+  color: var(--black);
+}

@@ -1,0 +1,4 @@
+<!-- Validate email with RegExp -->
+<input [ngStyle]="{
+  'border': !value.length ? '2px solid var(--darkes-grey)' : value.length < 8 ? '2px solid red' : '2px solid lightgreen'
+}" class="intro__input" type="email" placeholder="Your email" [(ngModel)]="value">

@@ -1,0 +1,17 @@
+.intro__input {
+  width: 100%;
+  max-width: 350px;
+  height: 50px;
+  border-radius: 8px 0px 0px 8px;
+  padding-left: 15px;
+  transition: var(--default-transition);
+  color: var(--white);
+  font-size: 1.25em;
+  background: var(--darkest-grey);
+  border: 2px solid var(--darkest-grey);
+  outline: 0;
+}
+
+.intro__input:focus {
+  border: 2px solid var(--white);
+}

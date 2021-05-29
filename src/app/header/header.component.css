@@ -1,0 +1,43 @@
+.header {
+  color: var(--grey);
+  max-width: 1008px;
+}
+
+.header {
+  width: 100%;
+}
+
+.header,
+.nav,
+.nav__list {
+  height: 64px;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+}
+
+.nav__item {
+  margin: 20px;
+  cursor: pointer;
+  transition: var(--default-transition);
+}
+
+.nav__item--important {
+  width: 101px;
+  height: 36px;
+  background: var(--light-grey);
+  border-radius: 6px;
+  background-color: var(--light-grey);
+  color: var(--black);
+}
+
+.nav__item:hover {
+  color: var(--white);
+}
+
+.nav__item--important:hover {
+  color: var(--black);
+  transform: scale(1.05);
+}
