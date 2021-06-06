@@ -7,10 +7,9 @@ import { Component } from '@angular/core';
 })
 
 export class ContainerComponent {
-  visible = true;
-  itemsAreHidden:any;
-  
-  toggleItems() {
-    this.visible = !this.visible;
+  isOpened = true;
+
+  toggleCards() {
+    this.isOpened = !this.isOpened;
   }
 }

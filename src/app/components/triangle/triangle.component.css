@@ -1,0 +1,10 @@
+.triangle {
+  transition: var(--default-transition);
+  transition-delay: .15s;
+  transform: scale(1.25);
+  cursor: pointer;
+}
+
+.triangle:hover {
+  transform: scale(1.3);
+}

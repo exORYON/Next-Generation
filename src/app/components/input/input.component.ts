@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-input',
@@ -7,5 +8,6 @@ import { Component } from '@angular/core';
 })
 
 export class InputComponent {
-  value = ''
+  emailRegExp = /^\s*\w{5,}@[a-z]+\.[a-z]+\s*$/i;
+  @Input() value = '';
 }

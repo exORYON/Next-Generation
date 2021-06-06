@@ -38,6 +38,11 @@
    cursor: pointer;
    transition: var(--default-transition);
    font-family: 'Roboto', sans-serif;
+   padding-top: 1px;
+ }
+
+ .intro__button:active {
+  background: var(--darkest-grey);
  }
 
  .intro__button:hover {

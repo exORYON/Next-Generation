@@ -1,0 +1,7 @@
+.card {
+  width: 80vw;
+  height: 80vh;
+  margin-top: -225px;
+  border-radius: 5px;
+  transition: var(--default-transition);
+}

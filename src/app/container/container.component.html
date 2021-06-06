@@ -6,15 +6,22 @@
       <div class="container__option"></div>
     </div>
     
-    <button class="container__option container__option--close" 
-    (click)="toggleItems()">X</button>
+    <app-close-button (click)="toggleCards()" [isOpened]="isOpened"></app-close-button>
   </div>
 
-  <div class="container__inner" *ngIf="visible; else itemsAreHidden">
-    <div class="container__item container__item--green"></div>
-    <div class="container__item container__item--yellow"></div>
-    <div class="container__item container__item--purple"></div>
-    <div class="container__item container__item--grey"></div>
+  <div class="container__inner" *ngIf="isOpened; else itemsAreHidden">
+    <div class="container__item container__item--green ac" [routerLink]="['/card', 'green']">
+      PRODUCT
+    </div>
+    <div class="container__item container__item--yellow ac" [routerLink]="['/card', 'yellow']">
+      PLANS
+    </div>
+    <div class="container__item container__item--purple ac" [routerLink]="['/card', 'purple']">
+      BLOG
+    </div>
+    <div class="container__item container__item--grey ac" [routerLink]="['/card', 'grey']">
+      GET UPDATES
+    </div>
   </div>
 
   <ng-template #itemsAreHidden>

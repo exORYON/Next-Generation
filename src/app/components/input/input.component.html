@@ -1,0 +1,3 @@
+<input [ngStyle]="{
+  'border': !value.length ? '2px solid transparent' : emailRegExp.test(value) ? '2px solid var(--success)' : '2px solid var(--danger)'
+}" class="intro__input" type="email" placeholder="Your email" [(ngModel)]="value">

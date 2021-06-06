@@ -1,28 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
+import { IntroSectionComponent } from './components/intro/intro.component';
+import { CardComponent } from './components/card/card.component';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { IntroSection } from './intro/intro.component';
-import { ButtonComponent } from './button/button.component';
-import { LabelComponent } from './label/label.component';
-import { InputComponent } from './input/input.component';
-import { ContainerComponent } from './container/container.component';
+import { WelcomeScreenModule } from './welcome-screen/welcome-screen.module';
+import { GetInTouchModule } from './get-in-touch/get-in-touch.module';
+import { ContainerModule } from './container/container.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    IntroSection,
-    ButtonComponent,
-    LabelComponent,
-    InputComponent,
-    ContainerComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot([
+      { path: '', component: IntroSectionComponent },
+      { path: 'card/:color', component: CardComponent }
+    ]),
+    WelcomeScreenModule,
+    ContainerModule,
+    GetInTouchModule
   ],
   providers: [],
   bootstrap: [

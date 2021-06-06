@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./intro.component.css']
 })
 
-export class IntroSection {
-  defaultText = 'coming soon'
+export class IntroSectionComponent {
+  defaultText = 'coming soon';
 };
